@@ -3,105 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍승완 | Projects</title>
+    <title>AI Portfolio - Projects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-        }
-        p {
-            margin-bottom: 10px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .project-card {
-            background: #ecf0f1;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-        .project-card h3 {
-            margin-top: 0;
-            color: #3498db;
+            font-family: 'Work Sans', 'Noto Sans', sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>프로젝트 경험</h1>
-        <p>제가 직접 참여하고 구현했던 주요 프로젝트들을 소개합니다. 각 프로젝트에서 사용된 기술과 제가 담당한 역할을 상세하게 기록했습니다.</p>
-        
-        <div class="project-card">
-            <h3>소담일기 - 시각장애인을 위한 감성 이미지 캡셔닝 서비스</h3>
-            <p><strong>주요 내용:</strong> 시각장애인 사용자를 위해 이미지와 음성 입력을 받아 경량화된 BLIP/CLIP 모델로 이미지 캡셔닝을 처리하고, LLM API를 활용해 감성적이고 개인화된 설명을 제공하는 서비스입니다.</p>
-            <ul>
-                <li><strong>기술 스택:</strong> Python, Django, BLIP, CLIP, LLM API</li>
-                <li><strong>담당 역할:</strong> Django를 이용한 백엔드 아키텍처 설계, 모델과 앱의 안정적 연동을 위한 모듈화, 초기 테스트 및 로직 검증</li>
-            </ul>
+<body class="bg-white text-[#111418] min-h-screen flex flex-col">
+
+    <!-- Header / Navigation Bar -->
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-4 sm:px-10 py-3">
+        <div class="flex items-center gap-4">
+            <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">AI Portfolio</h2>
         </div>
-        
-        <div class="project-card">
-            <h3>AI 모델 API 연동 프로젝트</h3>
-            <p><strong>주요 내용:</strong> BLIP 모델을 다운로드하여 API 서버에 연동하고, Postman을 이용해 연결성을 검증했습니다.</p>
-            <ul>
-                <li><strong>기술 스택:</strong> Python, API, Postman, BLIP 모델</li>
-                <li><strong>담당 역할:</strong> 모델 로드 및 서버 연동, API 엔드포인트 테스트, 결과 검증</li>
-            </ul>
+        <div class="hidden sm:flex flex-1 justify-end gap-8 items-center">
+            <div class="flex items-center gap-9">
+                <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Home</a>
+                <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">Projects</a>
+                <a class="text-[#111418] text-sm font-medium leading-normal" href="work_knowledges.html">Work & Knowledges</a>
+                <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
+            </div>
+            <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                <div class="text-[#111418]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                    </svg>
+                </div>
+            </button>
         </div>
-        
-        <div class="project-card">
-            <h3>Intel AI Workforce 기반 배포 프로젝트</h3>
-            <p><strong>주요 내용:</strong> OpenVINO 툴킷을 활용하여 AI 모델을 다양한 하드웨어 환경(CPU, GPU, NPU)에 최적화하여 배포하는 프로젝트를 진행했습니다.</p>
-            <ul>
-                <li><strong>기술 스택:</strong> OpenVINO, Python, 이종 실행(Heterogeneous Execution)</li>
-                <li><strong>담당 역할:</strong> 모델 IR 변환, 멀티 디바이스 추론 로직 구현, 성능 최적화</li>
-            </ul>
-        </div>
-        
-        <div class="project-card">
-            <h3>안드로이드 앱 개발 (Kotlin & Compose)</h3>
-            <p><strong>주요 내용:</strong> 안드로이드 스튜디오를 이용해 Kotlin과 Jetpack Compose로 모바일 앱을 개발했습니다. 비동기 처리와 스레드 분리를 통해 UI/UX를 개선하는 로직을 구현했습니다.</p>
-            <ul>
-                <li><strong>기술 스택:</strong> Kotlin, Android Studio, Jetpack Compose, 비동기 처리</li>
-                <li><strong>담당 역할:</strong> 앱 UI/UX 설계, 백그라운드 작업 구현, 모듈화된 코드 작성</li>
-            </ul>
-        </div>
-        
-        <div class="project-card">
-            <h3>Unity 기반 3D 가상환경 설계</h3>
-            <p><strong>주요 내용:</strong> Unity 엔진과 C#을 사용하여 간단한 3D 상호작용 가상환경을 설계했습니다. 객체 간의 상호작용 및 물리 법칙을 구현했습니다.</p>
-            <ul>
-                <li><strong>기술 스택:</strong> Unity, C#, 3D 가상환경</li>
-                <li><strong>담당 역할:</strong> 가상환경 구성, 상호작용 스크립트 작성, 물리 엔진 설정</li>
-            </ul>
+    </header>
+
+    <!-- Main Content - Projects -->
+    <div class="px-4 sm:px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+                <div class="flex min-w-72 flex-col gap-3">
+                    <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight">Projects</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">
+                        Explore a selection of my AI projects, showcasing my skills and expertise in various domains.
+                    </p>
+                </div>
+            </div>
+            <div class="px-4 py-3">
+                <label class="flex flex-col min-w-40 h-12 w-full">
+                    <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                        <div class="text-[#637588] flex border-none bg-[#f0f2f4] items-center justify-center pl-4 rounded-l-lg border-r-0" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                            </svg>
+                        </div>
+                        <input placeholder="Search projects" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border-none bg-[#f0f2f4] focus:border-none h-full placeholder:text-[#637588] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" value="" />
+                    </div>
+                </label>
+            </div>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] pl-4 pr-4">
+                    <p class="text-[#111418] text-sm font-medium leading-normal">All</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] pl-4 pr-4">
+                    <p class="text-[#111418] text-sm font-medium leading-normal">Machine Learning</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] pl-4 pr-4">
+                    <p class="text-[#111418] text-sm font-medium leading-normal">Natural Language Processing</p>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex flex-col sm:flex-row items-stretch justify-between gap-4 rounded-lg">
+                    <div class="flex flex-[2_2_0px] flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#111418] text-base font-bold leading-tight">AI-Powered Customer Service Chatbot</p>
+                            <p class="text-[#637588] text-sm font-normal leading-normal">
+                                Developed a chatbot using advanced NLP techniques to provide instant customer support, handle inquiries, and resolve issues efficiently.
+                            </p>
+                        </div>
+                        <a href="#" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                            <span class="truncate">View Project</span>
+                        </a>
+                    </div>
+                    <div class="w-full h-48 sm:h-auto bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmWkZ9Rih28rBMJ1xXObGU49iYqO1gQjZGXP3G91CgfoRcN_FgFTe70Ioi3GkKFI96RYu7nbY3bFTV1nuGfrgVmIMI4MzwzBaWFFqgaqtFDz9B-GfrYs49ACWnmGs81EjwZK_LLya5BQZen5bXcdhnGFLlKWuEyDl7gi4VGyhG-j9w8QQcd6moBP_RvaAOjgTmowq8LIrZikd4-ciSfjDcTuIFjngAsHUVo63ddVRahzBE7MauuYReZ6VXMKdzbHPYAGVtFjasdJi7");'></div>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex flex-col sm:flex-row items-stretch justify-between gap-4 rounded-lg">
+                    <div class="flex flex-[2_2_0px] flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#111418] text-base font-bold leading-tight">Predictive Maintenance System for Industrial Equipment</p>
+                            <p class="text-[#637588] text-sm font-normal leading-normal">
+                                Built a machine learning model to predict equipment failures, enabling proactive maintenance and reducing downtime in industrial settings.
+                            </p>
+                        </div>
+                        <a href="#" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                            <span class="truncate">View Project</span>
+                        </a>
+                    </div>
+                    <div class="w-full h-48 sm:h-auto bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA09cvPpwgx8BlrBDKxfaXQ-EPDzpk5vKF4ggKdfgv1cTp_QDDMPQRJjUiz7Y8UZzEwK_NzETf-0ZB-qd1HRHGSW7E294PV5LVIx4czP5obX53unkA5AiMDebiC_bANUgzITuLJHxJSi-yTngjnK5e2sBzkLFm0vzK_8MpdfXYctW5eDp6DvDn8XC85_wFXzpb9sVpQHGOORZ06MtZ1HApiXOJIwL2KPXGRRRaTt7yfZzkD-MgN5k1M9ngFDdApLFYCKCkhCcF_PVs2");'></div>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex flex-col sm:flex-row items-stretch justify-between gap-4 rounded-lg">
+                    <div class="flex flex-[2_2_0px] flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#111418] text-base font-bold leading-tight">Personalized Recommendation Engine for E-commerce</p>
+                            <p class="text-[#637588] text-sm font-normal leading-normal">
+                                Created a recommendation system that analyzes user behavior and preferences to suggest relevant products, enhancing the shopping experience.
+                            </p>
+                        </div>
+                        <a href="#" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                            <span class="truncate">View Project</span>
+                        </a>
+                    </div>
+                    <div class="w-full h-48 sm:h-auto bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbwTRakYJmtWAndfs6aX6DiZbaMit3IADWv0sIlNUoZnmxrOPB4SGdb1joN3EJsdVakGX0rIHoLDPx4Q3YXfM0YajoyTrb4Lrc62Mpe81abPMYZAQPHZV8kFa-N8NSJ9DvtlQFXojaO6CB3D8JPX8YtfiRWvUB426NfZZTw53D99fl3F2xvBgh3evD0YDW9OA32eN2bbKMvkquqe1b2iQOQmasUgjN643rR0td6qrtGJvDP2qkSaVqwnt8N13kWk17if2ijxtkRDMK");'></div>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex flex-col sm:flex-row items-stretch justify-between gap-4 rounded-lg">
+                    <div class="flex flex-[2_2_0px] flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#111418] text-base font-bold leading-tight">Automated Content Summarization Tool</p>
+                            <p class="text-[#637588] text-sm font-normal leading-normal">
+                                Developed a tool that automatically summarizes long articles and documents, providing concise and informative summaries for quick consumption.
+                            </p>
+                        </div>
+                        <a href="#" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                            <span class="truncate">View Project</span>
+                        </a>
+                    </div>
+                    <div class="w-full h-48 sm:h-auto bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCh9dvsAc03QWHTNePfEwct4VkMo-6liutYv7BhFrn4R1mua181SQsNBBLnOqeWuylMPAilHsq5WTCIskpkMY8GEC2vcMsp_1vbPiYLtbPMK-jWb5nN3FNMkA4vsZZdBnekfBhRLoMfPiWNoHWDjaqdl4ZN_zr-SYHbhJq31xYp7kPEqoY19bqxDoPvwnTmDl9bNmuSqqnYnRDKw1TmJE7Vpi027ahIGxY0l1iLGK0QoTGHjYXqn8MJjeom5trjtCudhx9r9VG7neE1");'></div>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="flex flex-col sm:flex-row items-stretch justify-between gap-4 rounded-lg">
+                    <div class="flex flex-[2_2_0px] flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <p class="text-[#111418] text-base font-bold leading-tight">Image Recognition System for Object Detection</p>
+                            <p class="text-[#637588] text-sm font-normal leading-normal">
+                                Built an image recognition system capable of detecting and classifying objects within images, with applications in various fields such as surveillance and autonomous driving.
+                            </p>
+                        </div>
+                        <a href="#" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                            <span class="truncate">View Project</span>
+                        </a>
+                    </div>
+                    <div class="w-full h-48 sm:h-auto bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoEzwwuZ74Ea49AETjN0Poc3TOHKiDjJG9LythjhquLbhU_Iimk3q8nk4vCFW9aPOfkDMVFn560g8fGO_SZN_h7ZSsF4hWaoAJDWKSqihMccui4Io3k4crh6S0Vam_jjOaw_tcRIE4ffd_9r2isnYVUYD_V4RVm9c_Eyv-0Rn2-cdi8IkfIVCwMsVZvcXLS7MRLfuB8F8hqkBlbDkXSW2sJi297jIfW9CWS16UNUdoGIqp5G_-5Y6v5li6aQEVAnLx0J-T-3GGILmF");'></div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="p-4 text-center text-sm text-[#637588] border-t border-solid border-t-[#f0f2f4] mt-auto">
+        <p>&copy; 2024 AI Portfolio. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
