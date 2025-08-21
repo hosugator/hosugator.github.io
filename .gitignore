@@ -7,3 +7,6 @@ design_work_knowledges.html
 # 테스트 파일들을 무시합니다.
 
 test.html
+
+# image
+*.jpeg
