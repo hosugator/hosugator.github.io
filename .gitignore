@@ -1,12 +1,5 @@
-# 디자인 원본 파일들을 무시합니다.
+# old folder
+old
 
-design_index.html
-design_projects.html
-design_work_knowledges.html
-
-# 테스트 파일들을 무시합니다.
-
-test.html
-
-# image
-*.jpeg
+# large file
+dorosee_presentation.pptx
