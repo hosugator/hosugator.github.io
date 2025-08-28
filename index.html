@@ -9,6 +9,11 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,108 +30,226 @@
                                 fill="currentColor"></path>
                         </svg>
                     </div>
-                    <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio - AI
-                        Engineer</h2>
+                    <div class="ko">
+                        <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">포트폴리오 - 홍승완</h2>
+                    </div>
+                    <div class="en hidden">
+                        <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio -
+                            Seungwan Hong</h2>
+                    </div>
                 </div>
                 <div class="flex flex-1 justify-end gap-8">
                     <div class="flex items-center gap-9">
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Introduction</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">Projects</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="work_knowledges.html">Work
-                            &amp; Knowledges</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
-
+                        <div class="ko flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">소개</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">프로젝트</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="work_knowledges.html">경력
+                                및 지식</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">연락</a>
+                            <a id="lang-toggle" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">English</a>
+                        </div>
+                        <div class="en hidden flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="index.html">Introduction</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="projects.html">Projects</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">Work &amp; Knowledges</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
+                            <a id="lang-toggle-en" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">한글</a>
+                        </div>
                     </div>
                 </div>
             </header>
             <div class="px-40 flex flex-1 justify-center py-5">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-                    <div class="flex flex-wrap justify-between gap-3 p-4 mb-4">
-                        <div class="flex min-w-72 flex-col gap-3">
-                            <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight">Seungwan Hong
-                            </p>
-                            <p class="text-[#637588] text-sm font-normal leading-normal mb-4">AI Engineer</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">I am Seungwan Hong, an AI
-                                Engineer who creates innovative value by fusing AI technology with an engineering sciences.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">I have a deep understanding of
-                                environmental and chemical engineering.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">I successfully managed two
-                                major projects as a PM at a global company in combustion
-                                technology.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">My strategic management led to
-                                a 4% increase in target operating profit.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">I also received a commendation
-                                from the CEO for my successful international project management.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">Through these experiences, I
-                                developed a proven ability to manage project lifecycles and solve complex problems.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">Captivated by the potential of
-                                AI, I am building on my problem-solving skill to transition into
-                                an AI engineering career.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">Currently, I am exploring from
-                                model training to Unity 3D simulations through the Intel
-                                AI program.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">I believe in continuous growth
-                                and practice the 'Zettelkasten' method to master what I learn.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">My ultimate goal is to develop
-                                my own innovative services by leveraging AI to address real-world challenges.</p>
+                    <div class="ko">
+                        <div class="flex flex-wrap justify-between gap-3 p-4 mb-4">
+                            <div class="flex min-w-72 flex-col gap-3">
+                                <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight">홍승완</p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal mb-4">AI 엔지니어</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">안녕하세요, 저는 AI 기술과 공학적 지식을
+                                    결합하여 혁신적인 가치를 창출하는 AI 엔지니어 홍승완입니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">저는 환경 및 화학 분야에 대한 깊은 이해를
+                                    바탕으로 글로벌 연소 기술 기업에서 PM으로서 두 개의 주요 프로젝트를 성공적으로 관리했습니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">수십억 규모의 프로젝트에서 목표 영업 이익 대비 4%
+                                    초과 달성하였으며, 성공적인 해외 프로젝트 협력을 인정받아 CEO와 본사 PM에게 감사 인사를 받았습니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">이러한 경험을 통해 프로젝트 생애 주기 관리와
+                                    복잡한 문제 해결 능력을 입증했습니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">그러던 중, 점차 업무에서 LLM과 AI 도구들을 활용하게 되면서 AI의 잠재력에 매료되어, 기존의 문제 해결
+                                    능력을 바탕으로 AI 엔지니어 경력을 쌓고 있습니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">현재는 인텔 AI 프로그램을 통해 모델 훈련부터
+                                    Unity 3D 시뮬레이션에 이르기까지, 도전적인 태도로 임하며 실용적인 팀 프로젝트들을 진행하고 있습니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">저는 입력된 지식을 일회성으로 흘려 보내지 않고, 나의 언어로 가공하여 저장하는
+                                    '제텔카스텐'을 실천하며, 재사용 및 확장이 가능한 성장을 추구합니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">궁극적인 목표는 AI를 활용하여 현실의 문제들을
+                                    해결하는 혁신적인 서비스를 직접 개발하고 세상에 기여하는 것입니다.</p>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
-                        Experience</h3>
-                    <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
-                        <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
-                            data-icon="GraduationCap" data-size="24px" data-weight="regular">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="flex flex-col justify-center">
-                            <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">Environmental
-                                Engineering
-                            </p>
-                            <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">Kyung Hee
-                                University</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
-                        <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
-                            data-icon="Briefcase" data-size="24px" data-weight="regular">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="flex flex-col justify-center">
-                            <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">Zeeco Asia -
-                                Global company in Combustion industry</p>
-                            <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">Project Manager
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
-                        <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
-                            data-icon="Trophy" data-size="24px" data-weight="regular">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="flex flex-col justify-center">
-                            <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">UWC 2025 AI &
-                                Unmanned Mobility Future Hackathon</p>
-                            <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">2nd Prize</p>
+                    <div class="en hidden">
+                        <div class="flex flex-wrap justify-between gap-3 p-4 mb-4">
+                            <div class="flex min-w-72 flex-col gap-3">
+                                <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight">Seungwan
+                                    Hong
+                                </p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal mb-4">AI Engineer</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">I am Seungwan Hong, an AI
+                                    Engineer who creates innovative value by fusing AI technology with an engineering
+                                    sciences.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">I have a deep understanding
+                                    of
+                                    environmental and chemical engineering.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">I successfully managed two
+                                    major projects as a PM at a global company in combustion
+                                    technology.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">My strategic management led
+                                    to
+                                    a 4% increase in target operating profit.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">I also received a
+                                    commendation from the CEO and the headquarter's PM for my successful international
+                                    project collaboration.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">Through these experiences,
+                                    I
+                                    developed a proven ability to manage project lifecycles and solve complex problems.
+                                </p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">Captivated by the potential
+                                    of
+                                    AI, I am building on my problem-solving skill to transition into
+                                    an AI engineering career.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">Currently, I am exploring
+                                    from
+                                    model training to Unity 3D simulations through the Intel
+                                    AI program.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">I believe in continuous
+                                    growth
+                                    and practice the 'Zettelkasten' method to master what I learn.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">My ultimate goal is to
+                                    develop
+                                    my own innovative services by leveraging AI to address real-world challenges.</p>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 mt-6">
-                        Skills
-                    </h3>
+                    <div class="ko">
+                        <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">경력
+                        </h3>
+                        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+                            <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
+                                data-icon="GraduationCap" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">환경학 및 환경공학과
+                                </p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">경희대학교</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+                            <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
+                                data-icon="Briefcase" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">Zeeco Asia -
+                                    글로벌 연소 기업</p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">프로젝트 매니저
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+                            <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
+                                data-icon="Trophy" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">UWC 2025 AI
+                                    & 무인이동체 퓨쳐 해커톤</p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">최우수상</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="en hidden">
+                        <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
+                            Experience</h3>
+                        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+                            <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
+                                data-icon="GraduationCap" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">
+                                    Environmental Engineering
+                                </p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">Kyung Hee
+                                    University</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+                            <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
+                                data-icon="Briefcase" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">Zeeco Asia -
+                                    Global company in Combustion industry</p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">Project
+                                    Manager</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+                            <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
+                                data-icon="Trophy" data-size="24px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M232,64H208V56a16,16,0,0,0-16-16H64A16,16,0,0,0,48,56v8H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-28.49,64.64-63.51,64.9H128a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">UWC 2025 AI
+                                    & Unmanned Mobility Future Hackathon</p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">2nd Prize</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ko">
+                        <h3
+                            class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 mt-6">
+                            기술 스택</h3>
+                    </div>
+                    <div class="en hidden">
+                        <h3
+                            class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 mt-6">
+                            Skills</h3>
+                    </div>
                     <div class="flex gap-3 p-3 flex-wrap pr-4">
                         <div
                             class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] pl-4 pr-4">
@@ -153,8 +276,16 @@
                             <p class="text-[#111418] text-sm font-medium leading-normal">Kotlin</p>
                         </div>
                     </div>
-                    <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 mt-6">
-                        Currently Learning</h3>
+                    <div class="ko">
+                        <h3
+                            class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 mt-6">
+                            현재 학습 중</h3>
+                    </div>
+                    <div class="en hidden">
+                        <h3
+                            class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 mt-6">
+                            Currently Learning</h3>
+                    </div>
                     <div class="flex items-center gap-4 bg-white px-4 min-h-14">
                         <div class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-10"
                             data-icon="BookOpen" data-size="24px" data-weight="regular">
@@ -172,6 +303,54 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleLanguage() {
+            // 현재 활성화된 언어를 파악합니다.
+            const isEnglishActive = !document.querySelector('.en').classList.contains('hidden');
+
+            // 모든 한국어 및 영어 콘텐츠 요소를 가져옵니다.
+            const koreanElements = document.querySelectorAll('.ko');
+            const englishElements = document.querySelectorAll('.en');
+
+            // 토글 버튼 텍스트와 document.title을 업데이트합니다.
+            const langToggleButtonKo = document.getElementById('lang-toggle');
+            const langToggleButtonEn = document.getElementById('lang-toggle-en');
+
+            if (isEnglishActive) {
+                // 현재 영어가 활성화되어 있으므로 한국어 콘텐츠를 보여줍니다.
+                koreanElements.forEach(el => el.classList.remove('hidden'));
+                englishElements.forEach(el => el.classList.add('hidden'));
+                if (langToggleButtonKo) langToggleButtonKo.classList.remove('hidden');
+                if (langToggleButtonEn) langToggleButtonEn.classList.add('hidden');
+                document.title = '소개 - 홍승완';
+            } else {
+                // 현재 한국어가 활성화되어 있으므로 영어 콘텐츠를 보여줍니다.
+                koreanElements.forEach(el => el.classList.add('hidden'));
+                englishElements.forEach(el => el.classList.remove('hidden'));
+                if (langToggleButtonKo) langToggleButtonKo.classList.add('hidden');
+                if (langToggleButtonEn) langToggleButtonEn.classList.remove('hidden');
+                document.title = 'Introduction - Seungwan Hong';
+            }
+        }
+
+        // 페이지 로드 시 초기 언어 설정 (영어가 기본)
+        window.onload = function () {
+            const koreanElements = document.querySelectorAll('.ko');
+            const englishElements = document.querySelectorAll('.en');
+            const langToggleButtonKo = document.getElementById('lang-toggle');
+            const langToggleButtonEn = document.getElementById('lang-toggle-en');
+
+            // 영어를 기본으로 표시하고 한국어는 숨깁니다.
+            koreanElements.forEach(el => el.classList.add('hidden'));
+            englishElements.forEach(el => el.classList.remove('hidden'));
+
+            // 토글 버튼도 영어 상태에 맞춰 표시합니다.
+            if (langToggleButtonKo) langToggleButtonKo.classList.add('hidden');
+            if (langToggleButtonEn) langToggleButtonEn.classList.remove('hidden');
+
+            document.title = 'Introduction - Seungwan Hong';
+        };
+    </script>
 </body>
 
 </html>
