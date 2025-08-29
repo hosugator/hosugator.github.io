@@ -9,6 +9,11 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,171 +30,343 @@
                                 fill="currentColor"></path>
                         </svg>
                     </div>
-                    <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio - AI
-                        Engineer</h2>
+                    <div class="ko">
+                        <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">포트폴리오 - 홍승완</h2>
+                    </div>
+                    <div class="en hidden">
+                        <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio -
+                            Seungwan Hong</h2>
+                    </div>
                 </div>
                 <div class="flex flex-1 justify-end gap-8">
                     <div class="flex items-center gap-9">
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Introduction</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">Projects</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="work_knowledges.html">Work
-                            &amp; Knowledges</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
-
+                        <div class="ko flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">소개</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">프로젝트</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">경력 및 지식</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">연락</a>
+                            <a id="lang-toggle" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">English</a>
+                        </div>
+                        <div class="en hidden flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="index.html">Introduction</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="projects.html">Projects</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">Work &amp; Knowledges</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
+                            <a id="lang-toggle-en" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">한글</a>
+                        </div>
                     </div>
                 </div>
             </header>
             <div class="px-40 flex flex-1 justify-center py-5">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-                    <div class="flex flex-wrap justify-between gap-3 p-4 mb-8">
-                        <div class="flex min-w-72 flex-col gap-3">
-                            <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight mb-4">Projects
-                            </p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">I focus on creating AI
-                                solutions that start with a clear problem definition and add direct value to users'
-                                lives.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">These projects are not just
-                                about technical implementation, but about creating practical solutions tailored to
-                                specific problems.</p>
-                            <p class="text-[#111418] text-sm font-normal leading-normal">They demonstrate my commitment
-                                to user-centric problem-solving and rapid value creation.</p>
+                    <div class="ko">
+                        <div class="flex flex-wrap justify-between gap-3 p-4 mb-8">
+                            <div class="flex min-w-72 flex-col gap-3">
+                                <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight mb-4">프로젝트</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">저는 명확한 문제 정의를 바탕으로 사용자에게 직접적인 가치를 더하는 AI 솔루션을 만드는 데 중점을 둡니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">이 프로젝트들은 단순히 기술 구현을 넘어, 특정 문제에 맞춤화된 실용적인 솔루션을 만드는 것에 초점을 맞췄습니다.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">이를 통해 저는 사용자 중심의 문제 해결과 신속한 가치 창출에 대한 저의 노력을 보여드리고자 합니다.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                            <div class="flex flex-[2_2_0px] flex-col gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <p class="text-[#111418] text-base font-bold leading-tight">Dorosee</p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        An AI-powered urban platform that connects people
-                                        and technology by providing conversational access to city information.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        It goes beyond simple navigation by leveraging a multimodal AI
-                                        interface—combining the Web Speech API (STT) and OpenAI TTS—to deliver a
-                                        seamless voice experience.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        A key social contribution is its integration with the ‘SafetyDream’ missing
-                                        person API, which transforms the service from a simple guide into a proactive
-                                        community safety net.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        This project demonstrates proficiency in full-stack development using React 19,
-                                        TailwindCSS, and back-end logic for efficient API integration.
-                                    </p>
+                    <div class="en hidden">
+                        <div class="flex flex-wrap justify-between gap-3 p-4 mb-8">
+                            <div class="flex min-w-72 flex-col gap-3">
+                                <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight mb-4">Projects
+                                </p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">I focus on creating AI
+                                    solutions that start with a clear problem definition and add direct value to users'
+                                    lives.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">These projects are not just
+                                    about technical implementation, but about creating practical solutions tailored to
+                                    specific problems.</p>
+                                <p class="text-[#111418] text-sm font-normal leading-normal">They demonstrate my commitment
+                                    to user-centric problem-solving and rapid value creation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ko">
+                        <div class="p-4">
+                            <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-[#111418] text-base font-bold leading-tight">도로시 (Dorosee)</p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            대화형 인터페이스를 통해 도시 정보에 접근하는 AI 기반 도시 플랫폼입니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            Web Speech API(STT)와 OpenAI TTS를 결합하여 끊김 없는 음성 경험을 제공하는 멀티모달 AI 인터페이스를 활용해 단순한 내비게이션을 넘어섭니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            'SafetyDream' 실종자 API와의 연동을 통해, 단순히 길을 안내하는 서비스를 넘어 지역 사회의 안전망 역할을 하는 사회적 기여를 목표로 합니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            이 프로젝트는 React 19, TailwindCSS, 그리고 효율적인 API 통합을 위한 백엔드 로직을 활용한 풀스택 개발 능력을 보여줍니다.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQois1ekfNPewgNoZbg7kXZzssK--xk1xujqg-1SNJal9Jh9N4Gitok5U1nTMvzlw/pub?start=false&loop=false&delayms=3000"
+                                            target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">View Project</span>
+                                        </a>
+                                        <a href="https://github.com/hosugator/dorosee.git" target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">GitHub</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="flex gap-2">
-                                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vQois1ekfNPewgNoZbg7kXZzssK--xk1xujqg-1SNJal9Jh9N4Gitok5U1nTMvzlw/pub?start=false&loop=false&delayms=3000"
-                                        target="_blank"
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
-                                        <span class="truncate">View Project</span>
-                                    </a>
-                                    <a href="https://github.com/hosugator/dorosee.git" target="_blank"
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
-                                        <span class="truncate">GitHub</span>
-                                    </a>
+                                <div class="w-full bg-center bg-no-repeat aspect-video rounded-lg flex-1"
+                                    style='background-image: url("document/dorosee.png"); background-size: contain;'>
                                 </div>
                             </div>
-                            <div class="w-full bg-center bg-no-repeat aspect-video rounded-lg flex-1"
-                                style='background-image: url("document/dorosee.png"); background-size: contain;'>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="en hidden">
+                        <div class="p-4">
+                            <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-[#111418] text-base font-bold leading-tight">Dorosee</p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            An AI-powered urban platform that connects people
+                                            and technology by providing conversational access to city information.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            It goes beyond simple navigation by leveraging a multimodal AI
+                                            interface—combining the Web Speech API (STT) and OpenAI TTS—to deliver a
+                                            seamless voice experience.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            A key social contribution is its integration with the ‘SafetyDream’ missing
+                                            person API, which transforms the service from a simple guide into a proactive
+                                            community safety net.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            This project demonstrates proficiency in full-stack development using React 19,
+                                            TailwindCSS, and back-end logic for efficient API integration.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQois1ekfNPewgNoZbg7kXZzssK--xk1xujqg-1SNJal9Jh9N4Gitok5U1nTMvzlw/pub?start=false&loop=false&delayms=3000"
+                                            target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">View Project</span>
+                                        </a>
+                                        <a href="https://github.com/hosugator/dorosee.git" target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">GitHub</span>
+                                        </a>
+                                    </div>
 
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                            <div class="flex flex-[2_2_0px] flex-col gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <p class="text-[#111418] text-base font-bold leading-tight">Pic Tag</p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        An AI CCTV solution designed to provide a low-cost,
-                                        high-efficiency video object detection service for small businesses.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        It strategically addresses the high costs, complexity, and privacy concerns of
-                                        the existing market.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        The system's core technical differentiators are its use of a YOLOv11 model for
-                                        real-time object detection and an anonymized re-identification algorithm.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        A privacy-first approach was central to its design, with all data processing
-                                        occurring 100% locally to eliminate the risk of personal data leaks.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        The project's innovative 'AI DLC (Downloadable Content)' business model allows
-                                        small business owners to leverage their existing hardware, showcasing a strong
-                                        understanding of market dynamics and technical architecture.
-                                    </p>
                                 </div>
-                                <div class="flex gap-2">
-                                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vTfyWy852w4LpFRP9jKyh31DT6dEeFHOqbrKBRy9ZzHa4CraUgYDYrXGGgtUEFLaQ/pub?start=false&loop=false&delayms=3000"
-                                        target="_blank"
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
-                                        <span class="truncate">View Project</span>
-                                    </a>
-                                    <a href="https://github.com/hosugator/pic_tag_python.git" target="_blank"
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
-                                        <span class="truncate">GitHub</span>
-                                    </a>
+                                <div class="w-full bg-center bg-no-repeat aspect-video rounded-lg flex-1"
+                                    style='background-image: url("document/dorosee.png"); background-size: contain;'>
                                 </div>
-
-                            </div>
-                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                                style='background-image: url("document/pic_tag_color.jpg"); background-size: 70% auto;'>
                             </div>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                            <div class="flex flex-[2_2_0px] flex-col gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <p class="text-[#111418] text-base font-bold leading-tight">Sodam Diary</p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        A mobile application that transforms a simple
-                                        photo into a personalized, emotional voice diary for the visually impaired.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        Unlike conventional, robotic image descriptions, Sodam Diary leverages a prompt
-                                        engineering approach that combines a user's voice input with a LLM.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        It also uses BLIP & CLIP model to generate context-rich, personalized
-                                        sentences.
-                                    </p>
-                                    <p class="text-[#637588] text-sm font-normal leading-normal">
-                                        This project showcases not only expertise in Android (Kotlin, Jetpack Compose),
-                                        PyTorch, and TensorFlow Lite, but also a deep commitment to using technology to
-                                        foster independence and improve the quality of life for underserved communities.
-                                    </p>
+                    <div class="ko">
+                        <div class="p-4">
+                            <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-[#111418] text-base font-bold leading-tight">픽 태그 (Pic Tag)</p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            소규모 사업자를 위해 저비용, 고효율 영상 객체 감지 서비스를 제공하는 AI CCTV 솔루션입니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            기존 시장의 높은 비용, 복잡성 및 개인 정보 보호 문제를 전략적으로 해결했습니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            이 시스템의 핵심 기술적 차별점은 실시간 객체 감지를 위한 YOLOv11 모델과 익명화된 재식별 알고리즘 사용입니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            개인 정보 유출 위험을 제거하기 위해 모든 데이터 처리가 100% 로컬에서 이루어지는 '프라이버시 우선' 접근 방식을 채택했습니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            혁신적인 'AI DLC (Downloadable Content)' 비즈니스 모델을 통해 소규모 사업자가 기존 하드웨어를 활용할 수 있도록 함으로써, 시장 역학 및 기술 아키텍처에 대한 깊은 이해를 보여줍니다.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vTfyWy852w4LpFRP9jKyh31DT6dEeFHOqbrKBRy9ZzHa4CraUgYDYrXGGgtUEFLaQ/pub?start=false&loop=false&delayms=3000"
+                                            target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">View Project</span>
+                                        </a>
+                                        <a href="https://github.com/hosugator/pic_tag_python.git" target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">GitHub</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="flex gap-2">
-                                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vQgV9KilGisQLE7oRErhayLKTl4xJOTB-WFoXUWG7f9rmV-VhXyVO39j7Nz9Yly0Q/pub?start=false&loop=false&delayms=3000"
-                                        target="_blank"
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
-                                        <span class="truncate">View Project</span>
-                                    </a>
-                                    <a href="https://github.com/hosugator/sodam_diary.git" target="_blank"
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
-                                        <span class="truncate">GitHub</span>
-                                    </a>
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                                    style='background-image: url("document/pic_tag_color.jpg"); background-size: 70% auto;'>
                                 </div>
                             </div>
-                            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                                style='background-image: url("document/sodam_diary.png");'>
+                        </div>
+                    </div>
+                    <div class="en hidden">
+                        <div class="p-4">
+                            <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-[#111418] text-base font-bold leading-tight">Pic Tag</p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            An AI CCTV solution designed to provide a low-cost,
+                                            high-efficiency video object detection service for small businesses.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            It strategically addresses the high costs, complexity, and privacy concerns of
+                                            the existing market.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            The system's core technical differentiators are its use of a YOLOv11 model for
+                                            real-time object detection and an anonymized re-identification algorithm.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            A privacy-first approach was central to its design, with all data processing
+                                            occurring 100% locally to eliminate the risk of personal data leaks.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            The project's innovative 'AI DLC (Downloadable Content)' business model allows
+                                            small business owners to leverage their existing hardware, showcasing a strong
+                                            understanding of market dynamics and technical architecture.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vTfyWy852w4LpFRP9jKyh31DT6dEeFHOqbrKBRy9ZzHa4CraUgYDYrXGGgtUEFLaQ/pub?start=false&loop=false&delayms=3000"
+                                            target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">View Project</span>
+                                        </a>
+                                        <a href="https://github.com/hosugator/pic_tag_python.git" target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">GitHub</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                                    style='background-image: url("document/pic_tag_color.jpg"); background-size: 70% auto;'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ko">
+                        <div class="p-4">
+                            <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-[#111418] text-base font-bold leading-tight">소담 다이어리 (Sodam Diary)</p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            시각 장애인을 위해 단순한 사진을 맞춤형 감성 음성 일기로 변환하는 모바일 앱입니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            일반적인 로봇 같은 이미지 설명과 달리, 사용자의 음성 입력과 LLM을 결합하는 프롬프트 엔지니어링 접근 방식을 활용합니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            또한, BLIP & CLIP 모델을 사용하여 문맥이 풍부한 개인 맞춤형 문장을 생성합니다.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            이 프로젝트는 Android (Kotlin, Jetpack Compose), PyTorch, TensorFlow Lite에 대한 전문성뿐만 아니라, 기술을 활용하여 소외된 계층의 자립을 돕고 삶의 질을 향상시키고자 하는 깊은 노력을 보여줍니다.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQgV9KilGisQLE7oRErhayLKTl4xJOTB-WFoXUWG7f9rmV-VhXyVO39j7Nz9Yly0Q/pub?start=false&loop=false&delayms=3000"
+                                            target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">View Project</span>
+                                        </a>
+                                        <a href="https://github.com/hosugator/sodam_diary.git" target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">GitHub</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                                    style='background-image: url("document/sodam_diary.png");'>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="en hidden">
+                        <div class="p-4">
+                            <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <p class="text-[#111418] text-base font-bold leading-tight">Sodam Diary</p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            A mobile application that transforms a simple
+                                            photo into a personalized, emotional voice diary for the visually impaired.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            Unlike conventional, robotic image descriptions, Sodam Diary leverages a prompt
+                                            engineering approach that combines a user's voice input with a LLM.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            It also uses BLIP & CLIP model to generate context-rich, personalized
+                                            sentences.
+                                        </p>
+                                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                                            This project showcases not only expertise in Android (Kotlin, Jetpack Compose),
+                                            PyTorch, and TensorFlow Lite, but also a deep commitment to using technology to
+                                            foster independence and improve the quality of life for underserved communities.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQgV9KilGisQLE7oRErhayLKTl4xJOTB-WFoXUWG7f9rmV-VhXyVO39j7Nz9Yly0Q/pub?start=false&loop=false&delayms=3000"
+                                            target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">View Project</span>
+                                        </a>
+                                        <a href="https://github.com/hosugator/sodam_diary.git" target="_blank"
+                                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#f0f2f4] text-[#111418] text-sm font-medium leading-normal w-fit">
+                                            <span class="truncate">GitHub</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                                    style='background-image: url("document/sodam_diary.png");'>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-    </div>
-    </div>
+    <script>
+        function toggleLanguage() {
+            const isEnglishActive = !document.querySelector('.en').classList.contains('hidden');
+            const nextLang = isEnglishActive ? 'ko' : 'en';
+            localStorage.setItem('lang', nextLang);
+            applyLanguage(nextLang);
+        }
+
+        function applyLanguage(lang) {
+            const isEnglish = lang === 'en';
+            const koreanElements = document.querySelectorAll('.ko');
+            const englishElements = document.querySelectorAll('.en');
+
+            koreanElements.forEach(el => el.classList.toggle('hidden', isEnglish));
+            englishElements.forEach(el => el.classList.toggle('hidden', !isEnglish));
+        }
+
+        window.onload = function () {
+            const savedLang = localStorage.getItem('lang');
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            const initialLang = urlLang || savedLang || 'ko';
+
+            applyLanguage(initialLang);
+        };
+    </script>
 </body>
 
 </html>

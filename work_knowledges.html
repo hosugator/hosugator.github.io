@@ -9,6 +9,11 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,37 +30,63 @@
                                 fill="currentColor"></path>
                         </svg>
                     </div>
-                    <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio - AI
-                        Engineer</h2>
+                    <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">
+                        <span class="en">Portfolio - AI Engineer</span>
+                        <span class="ko hidden">포트폴리오 - AI 엔지니어</span>
+                    </h2>
                 </div>
                 <div class="flex flex-1 justify-end gap-8">
                     <div class="flex items-center gap-9">
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Introduction</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">Projects</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="work_knowledges.html">Work
-                            &amp; Knowledges</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
-
+                        <div class="ko flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">소개</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">프로젝트</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">경력 및 지식</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">연락</a>
+                            <a id="lang-toggle" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">English</a>
+                        </div>
+                        <div class="en hidden flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="index.html">Introduction</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="projects.html">Projects</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">Work &amp; Knowledges</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
+                            <a id="lang-toggle-en" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">한글</a>
+                        </div>
                     </div>
                 </div>
             </header>
             <div class="px-40 flex flex-1 justify-center py-5">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                     <div class="flex flex-col gap-3 p-4">
-                        <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72 mb-4">Work
-                            &amp; Knowledges</p>
-                        <p class="text-[#637588] text-sm font-normal leading-normal">This space showcases my growth and
-                            expertise.</p>
-
-                        <p class="text-[#637588] text-sm font-normal leading-normal">I am dedicated to continuously
-                            exploring knowledge and internalizing what I learn.</p>
-                        <p class="text-[#637588] text-sm font-normal leading-normal">I demonstrate my practical
-                            problem-solving skills, supported by my knowledge system built on the Zettelkasten method.
+                        <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72 mb-4">
+                            <span class="en">Work &amp; Knowledges</span>
+                            <span class="ko hidden">경험 및 지식</span>
+                        </p>
+                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                            <span class="en">This space showcases my growth and expertise.</span>
+                            <span class="ko hidden">이 공간은 저의 성장과 전문성을 보여줍니다.</span>
+                        </p>
+                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                            <span class="en">I am dedicated to continuously exploring knowledge and internalizing what
+                                I learn.</span>
+                            <span class="ko hidden">저는 지식을 끊임없이 탐구하고 배운 것을 내재화하는 데 전념하고 있습니다.</span>
+                        </p>
+                        <p class="text-[#637588] text-sm font-normal leading-normal">
+                            <span class="en">I demonstrate my practical problem-solving skills, supported by my knowledge
+                                system built on the Zettelkasten method.</span>
+                            <span class="ko hidden">제텔카스텐 방법론으로 구축한 지식 체계를 바탕으로 실용적인 문제 해결 능력을 보여드립니다.</span>
                         </p>
                     </div>
                     <h2
                         class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 mt-2">
-                        Work</h2>
+                        <span class="en">Work</span>
+                        <span class="ko hidden">경력</span>
+                    </h2>
                     <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
                         <div class="flex flex-col items-center gap-1 pt-3">
                             <div class="text-[#111418]">
@@ -68,9 +99,14 @@
                             <div class="w-[1.5px] bg-[#dce0e5] h-2 grow"></div>
                         </div>
                         <div class="flex flex-1 flex-col py-3">
-                            <p class="text-[#111418] text-base font-medium leading-normal">Intel AI For
-                                Future Workforce Program</p>
-                            <p class="text-[#637588] text-base font-normal leading-normal">2025 - Present</p>
+                            <p class="text-[#111418] text-base font-medium leading-normal">
+                                <span class="en">Intel AI For Future Workforce Program</span>
+                                <span class="ko hidden">Intel AI For Future Workforce Program</span>
+                            </p>
+                            <p class="text-[#637588] text-base font-normal leading-normal">
+                                <span class="en">2025 - Present</span>
+                                <span class="ko hidden">2025 - 현재</span>
+                            </p>
                         </div>
                         <div class="flex flex-col items-center gap-1">
                             <div class="w-[1.5px] bg-[#dce0e5] h-2"></div>
@@ -84,11 +120,15 @@
                             <div class="w-[1.5px] bg-[#dce0e5] h-2 grow"></div>
                         </div>
                         <div class="flex flex-1 flex-col py-3">
-                            <p class="text-[#111418] text-base font-medium leading-normal">Project Manager at Zeeco
-                                Asia, a global leader in the combustion industry
-
+                            <p class="text-[#111418] text-base font-medium leading-normal">
+                                <span class="en">Project Manager at Zeeco Asia, a global leader in the combustion
+                                    industry</span>
+                                <span class="ko hidden">연소 업계의 글로벌 리더인 Zeeco Asia 프로젝트 매니저</span>
                             </p>
-                            <p class="text-[#637588] text-base font-normal leading-normal">2024 - 2025</p>
+                            <p class="text-[#637588] text-base font-normal leading-normal">
+                                <span class="en">2024 - 2025</span>
+                                <span class="ko hidden">2024 - 2025</span>
+                            </p>
                         </div>
                         <div class="flex flex-col items-center gap-1 pb-3">
                             <div class="w-[1.5px] bg-[#dce0e5] h-2"></div>
@@ -101,17 +141,26 @@
                             </div>
                         </div>
                         <div class="flex flex-1 flex-col py-3">
-                            <p class="text-[#111418] text-base font-medium leading-normal">B.S. in Environmental
-                                Engineering from Kyung Hee University</p>
-                            <p class="text-[#111418] text-base font-medium leading-normal">(Project on atmospheric
-                                analysis with Ansys of the Atmospheric Environment Lab)</p>
-
-                            <p class="text-[#637588] text-base font-normal leading-normal">2014 - 2021</p>
+                            <p class="text-[#111418] text-base font-medium leading-normal">
+                                <span class="en">B.S. in Environmental Engineering from Kyung Hee University</span>
+                                <span class="ko hidden">경희대학교 환경공학과 학사</span>
+                            </p>
+                            <p class="text-[#111418] text-base font-medium leading-normal">
+                                <span class="en">(Project on atmospheric analysis with Ansys of the Atmospheric
+                                    Environment Lab)</span>
+                                <span class="ko hidden">(대기환경 연구실 Ansys를 활용한 대기 분석 프로젝트)</span>
+                            </p>
+                            <p class="text-[#637588] text-base font-normal leading-normal">
+                                <span class="en">2014 - 2021</span>
+                                <span class="ko hidden">2014 - 2021</span>
+                            </p>
                         </div>
                     </div>
                     <h2
                         class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 mt-2">
-                        Knowledges</h2>
+                        <span class="en">Knowledges</span>
+                        <span class="ko hidden">지식</span>
+                    </h2>
                     <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
                         <div class="flex flex-1 gap-3 rounded-lg border border-[#dce0e5] bg-white p-4 flex-col">
                             <div class="flex items-center justify-between">
@@ -318,6 +367,32 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleLanguage() {
+            const isEnglishActive = !document.querySelector('.en').classList.contains('hidden');
+            const nextLang = isEnglishActive ? 'ko' : 'en';
+            localStorage.setItem('lang', nextLang);
+            applyLanguage(nextLang);
+        }
+
+        function applyLanguage(lang) {
+            const isEnglish = lang === 'en';
+            const koreanElements = document.querySelectorAll('.ko');
+            const englishElements = document.querySelectorAll('.en');
+
+            koreanElements.forEach(el => el.classList.toggle('hidden', isEnglish));
+            englishElements.forEach(el => el.classList.toggle('hidden', !isEnglish));
+        }
+
+        window.onload = function () {
+            const savedLang = localStorage.getItem('lang');
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            const initialLang = urlLang || savedLang || 'ko';
+
+            applyLanguage(initialLang);
+        };
+    </script>
 </body>
 
 </html>

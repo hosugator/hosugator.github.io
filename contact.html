@@ -9,6 +9,11 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,24 +30,42 @@
                                 fill="currentColor"></path>
                         </svg>
                     </div>
-                    <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio - AI
-                        Engineer</h2>
+                    <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">
+                        <span class="en">Portfolio - AI Engineer</span>
+                        <span class="ko hidden">포트폴리오 - AI 엔지니어</span>
+                    </h2>
                 </div>
                 <div class="flex flex-1 justify-end gap-8">
                     <div class="flex items-center gap-9">
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Introduction</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">Projects</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="work_knowledges.html">Work
-                            & Knowledges</a>
-                        <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
-
+                        <div class="ko flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">소개</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="projects.html">프로젝트</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">경력 및 지식</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">연락</a>
+                            <a id="lang-toggle" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">English</a>
+                        </div>
+                        <div class="en hidden flex gap-9">
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="index.html">Introduction</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="projects.html">Projects</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal"
+                                href="work_knowledges.html">Work &amp; Knowledges</a>
+                            <a class="text-[#111418] text-sm font-medium leading-normal" href="contact.html">Contact</a>
+                            <a id="lang-toggle-en" onclick="toggleLanguage()"
+                                class="text-[#111418] text-sm font-medium leading-normal cursor-pointer">한글</a>
+                        </div>
                     </div>
                 </div>
             </header>
             <div class="px-40 flex flex-1 justify-center py-5">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                     <div class="flex flex-wrap justify-between gap-3 p-4">
-                        <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">Contact Me
+                        <p class="text-[#111418] tracking-light text-[32px] font-bold leading-tight min-w-72">
+                            <span class="en">Contact Me</span>
+                            <span class="ko hidden">저에게 연락하기</span>
                         </p>
                     </div>
                     <div class="flex w-full grow bg-white @container p-4 gap-8 items-start">
@@ -53,28 +76,40 @@
                         </div>
                         <div class="flex flex-col gap-4 w-full">
                             <div class="flex flex-col gap-1 w-full">
-                                <p class="text-[#111418] text-base font-bold leading-tight pb-3 pt-1 px-4">Seungwan
-                                    Hong
+                                <p class="text-[#111418] text-base font-bold leading-tight pb-3 pt-1 px-4">
+                                    <span class="en">Seungwan Hong</span>
+                                    <span class="ko hidden">홍승완</span>
                                 </p>
                                 <p class="text-[#637588] text-sm font-normal leading-normal pb-3 pt-1 px-4 underline">hosugator@gmail.com</p>
                                 <p class="text-[#637588] text-sm font-normal leading-normal pb-3 pt-1 px-4 underline">https://github.com/hosugator</p>
                                 <p class="text-[#637588] text-sm font-normal leading-normal pb-3 pt-1 px-4 underline">https://www.linkedin.com/in/seungwanhong/</p>
                             </div>
                             <div class="flex flex-col gap-2 p-4">
-                                <p class="text-[#111418] text-base font-bold leading-tight">Collaboration Proposals</p>
-                                <p class="text-[#637588] text-sm font-normal leading-normal">
-                                    I am seeking opportunities to collaborate on projects involving</p>
-                                <p class="text-[#637588] text-sm font-normal leading-normal">
-                                    data analysis, ML/DL, NLP, and computer vision.
+                                <p class="text-[#111418] text-base font-bold leading-tight">
+                                    <span class="en">Collaboration Proposals</span>
+                                    <span class="ko hidden">협업 제안</span>
                                 </p>
                                 <p class="text-[#637588] text-sm font-normal leading-normal">
-                                    Please feel free to contact me to discuss potential opportunities.
+                                    <span class="en">I am seeking opportunities to collaborate on projects involving</span>
+                                    <span class="ko hidden">데이터 분석, ML/DL, NLP, 컴퓨터 비전 관련 프로젝트 협업 기회를 찾고 있습니다.</span>
+                                </p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal">
+                                    <span class="en">data analysis, ML/DL, NLP, and computer vision.</span>
+                                    <span class="ko hidden">관심 있는 분야에 대해 언제든지 편하게 연락 주세요.</span>
+                                </p>
+                                <p class="text-[#637588] text-sm font-normal leading-normal">
+                                    <span class="en">Please feel free to contact me to discuss potential opportunities.</span>
+                                    <span class="ko hidden">잠재적인 기회를 논의하기 위해 언제든지 편하게 연락 주세요.</span>
                                 </p>
                             </div>
                             <div class="flex flex-col gap-2 p-4">
-                                <p class="text-[#111418] text-base font-bold leading-tight">Response Availability</p>
+                                <p class="text-[#111418] text-base font-bold leading-tight">
+                                    <span class="en">Response Availability</span>
+                                    <span class="ko hidden">응답 가능 시간</span>
+                                </p>
                                 <p class="text-[#637588] text-sm font-normal leading-normal">
-                                    Weekdays: 9:00 AM - 9:00 PM
+                                    <span class="en">Weekdays: 9:00 AM - 9:00 PM</span>
+                                    <span class="ko hidden">주중: 오전 9시 - 오후 9시</span>
                                 </p>
                             </div>
                         </div>
@@ -83,6 +118,32 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleLanguage() {
+            const isEnglishActive = !document.querySelector('.en').classList.contains('hidden');
+            const nextLang = isEnglishActive ? 'ko' : 'en';
+            localStorage.setItem('lang', nextLang);
+            applyLanguage(nextLang);
+        }
+
+        function applyLanguage(lang) {
+            const isEnglish = lang === 'en';
+            const koreanElements = document.querySelectorAll('.ko');
+            const englishElements = document.querySelectorAll('.en');
+
+            koreanElements.forEach(el => el.classList.toggle('hidden', isEnglish));
+            englishElements.forEach(el => el.classList.toggle('hidden', !isEnglish));
+        }
+
+        window.onload = function () {
+            const savedLang = localStorage.getItem('lang');
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            const initialLang = urlLang || savedLang || 'ko';
+
+            applyLanguage(initialLang);
+        };
+    </script>
 </body>
 
 </html>
